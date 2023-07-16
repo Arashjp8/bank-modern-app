@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section className={layout.section}>
       <div className="flex flex-col flex-1">
-        <div className={`flex-1 flex-row ${styles.flexStart}`}>
+        <div className={`flex-1 flex-col md:flex-row ${styles.flexStart}`}>
           <h2 className={styles.heading2}>
             What people are <br className="sm:block hidden" /> saying about us
           </h2>
@@ -15,7 +15,9 @@ const Testimonials = () => {
             anywhere on the planet.
           </p>
         </div>
-        <div className={`flex flex-row justify-between items-center mt-10`}>
+        <div
+          className={`flex flex-col md:flex-row justify-between items-start mt-10`}
+        >
           {feedback.map((fb) => (
             <FeedbackCard key={fb.id} fb={fb} />
           ))}
