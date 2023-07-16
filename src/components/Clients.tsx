@@ -8,9 +8,9 @@ const Clients = () => {
           key={client.id}
           className={`w-[192px] h-[60px] ${
             client.id === "client-2" || client.id === "client-4"
-              ? "mt-4"
-              : "mt-0"
-          }`}
+              ? "md:mt-4"
+              : "md:mt-0"
+          } mt-10`}
         >
           <img src={client.logo} alt="logo" />
         </div>
