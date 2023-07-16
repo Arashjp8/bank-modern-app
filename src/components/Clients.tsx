@@ -2,7 +2,7 @@ import { clients } from "../constants";
 
 const Clients = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center mt-5">
+    <section className="flex flex-col md:flex-row justify-between items-center my-10">
       {clients.map((client) => (
         <div
           key={client.id}

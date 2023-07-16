@@ -8,7 +8,7 @@ interface Props {
 const FeedbackCard = ({ fb }: Props) => {
   return (
     <div
-      className={`w-[370px] h-[395px] flex flex-col flex-wrap items-start hover:bg-dimWhite feature-card rounded-xl`}
+      className={`w-[370px] h-[395px] flex flex-col flex-wrap items-start feature-card rounded-xl`}
     >
       <div className={`${styles.paddingY} pl-9`}>
         <div>
