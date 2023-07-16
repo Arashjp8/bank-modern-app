@@ -1,20 +1,23 @@
 import { clients } from "../constants";
+import styles from "../style";
 
 const Clients = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center my-10">
-      {clients.map((client) => (
-        <div
-          key={client.id}
-          className={`w-[192px] h-[60px] ${
-            client.id === "client-2" || client.id === "client-4"
-              ? "md:mt-4"
-              : "md:mt-0"
-          } mt-10`}
-        >
-          <img src={client.logo} alt="logo" />
-        </div>
-      ))}
+    <section className={`${styles.flexCenter} my-4`}>
+      <div className={`${styles.flexCenter} flex-wrap w-full`}>
+        {clients.map((client) => (
+          <div
+            key={client.id}
+            className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}
+          >
+            <img
+              src={client.logo}
+              alt="client"
+              className="sm:w-[192px] w-[100px] object-contain"
+            />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
